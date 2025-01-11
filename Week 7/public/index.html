@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Phuc Nguyen</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo blue-text">Phuc Nguyen</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="blue-text" href="#">Resume</a></li>
+        <li><a class="blue-text" href="#project-section">Projects</a></li>
+        <li><a class="blue-text" href="#">Contact</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a class="blue-text" href="#">Resume</a></li>
+        <li><a class="blue-text" href="#project-section">Projects</a></li>
+        <li><a class="blue-text" href="#">Contact</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons blue-text">menu</i></a>
+    </div>
+  </nav>
+  <main>
+    <section class="about">
+      <div class="profile-pic">
+        <img src="img/profile.png" alt="Phuc">
+      </div>
+      <div class="intro">
+        <h2 class="left ">Hello World</h2>
+        <h5 class="left">A Bit About Me</h5>
+        <p class="left">I am a web programming student attending SIT725</p>
+        <p class="left">This is my task for Week 4</p>
+        <div class="left">
+          <button data-target="modal1" class="blue waves-effect waves-light btn modal-trigger">Contact</button>
+          <!-- <a href="#resume" class=" blue waves-effect waves-light btn">Resume</a>
+          <a href="#projects" class=" blue waves-effect waves-light btn">Projects</a>
+          <a href="#contact" class=" blue waves-effect waves-light btn ">Contact</a> -->
+        </div>
+      </div>
+        <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Please leave me your contact details</h4>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      
+    </div>
+    <div class="modal-footer">
+      <button type="submit" href="#!" class="waves-effect waves-green btn-flat">Submit</button>
+    </div>
+  </div>
+    </section>
+    <section id="project-section" class="container">
+      <h3>My Projects</h3>
+      <div id="projects" class="row"></div>
+    </section>
+  </main>
+
+  <!--  Scripts--> 
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/env.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="env.js"></script>  
+  </body>
+</html>
